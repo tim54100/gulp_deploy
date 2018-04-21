@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pug</title>
+		<link rel="stylesheet" href='./style/style.css'>
+	</head>
+	<body>
+		<div id="app">
+			<div class="list" v-bind:style="{ width: list_width}">
+				<ul class="list_bar" v-bind:style="{ visibility: list_display}">
+					<li v-on:click="Home">Home</li>
+					<li v-on:click="About">About</li>
+					<li v-on:click="Contact">Contact</li>
+				</ul>
+			</div>
+
+			<div class="section first">
+				<div class="list-button" v-on:click="list_appear">
+					<div class="top line"></div>
+					<div class="mid line"></div>
+					<div class="mid line"></div>
+				</div>
+				<div class="home">
+					<h1>EastGeno</h1>
+					<hr>
+					<h1>劉冠閎</h1>
+				</div>
+				<div class="community_bar">
+					
+					<a class="community_element facebook" href="https://www.facebook.com/tim54100" target="_blank">
+						facebook
+						<img class="social-image" src="http://icons.iconarchive.com/icons/yootheme/social-bookmark/256/social-facebook-box-blue-icon.png">
+					</a>
+					<a class="community_element github" href="https://github.com/tim54100" target="_blank">
+						github
+						<img class="social-image" src="http://icons.iconarchive.com/icons/icons8/windows-8/24/Programming-Github-icon.png">
+					</a>
+					<a class="community_element twitter" href="https://twitter.com/tim54100" target="_blank">
+						twitter
+						<img class="social-image" src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/24/Web-Twitter-alt-2-Metro-icon.png">
+					</a>
+				</div>
+			</div>
+			<div class="section introduction">
+				<div class="introduction_content">
+					<h1>About Me</h1>
+					<p>一個愛玩遊戲和偶爾寫寫程式的大三宅男，目前主要在寫專題，和強化學習有關，通常用python來寫，
+					然後因為社團的關係有碰一些前端的東西，大概就這樣ㄅ，平常有在玩TRPG(COC)、Overwatch和Shadow Verse。</p>
+				</div>
+			</div>
+			<div class="last">
+				<div class="gap"></div>
+				<div class="contact">
+					<div class="contact_text">
+						<h1>Contact me at:</h1>
+						<h2>theworld.sthelastestotaku@gmail.com</h2> 
+					</div>
+					<div class="community_bar_2">
+						<a class="community_element facebook" href="https://www.facebook.com/tim54100" target="_blank">
+							facebook
+							<img class="social-image" src="http://icons.iconarchive.com/icons/yootheme/social-bookmark/256/social-facebook-box-blue-icon.png">
+						</a>
+						<a class="community_element github" href="https://github.com/tim54100" target="_blank">
+							github
+							<img class="social-image" src="http://icons.iconarchive.com/icons/icons8/windows-8/24/Programming-Github-icon.png">
+						</a>
+						<a class="community_element twitter" href="https://twitter.com/tim54100" target="_blank">
+							twitter
+							<img class="social-image" src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/24/Web-Twitter-alt-2-Metro-icon.png">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer"></div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
+		<script src="./js/control.js"></script>
+	</body>
+</html>
